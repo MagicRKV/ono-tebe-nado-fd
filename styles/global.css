@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 1100px;
+ width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
 }
@@ -29,9 +29,12 @@ a {
   color: inherit;
 }
 
-img {
+/*img {
   width: 100%;
 }
+*/
+
+
 
 button {
   font: inherit;
