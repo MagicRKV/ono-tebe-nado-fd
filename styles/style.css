@@ -1,12 +1,12 @@
 .header{
     display: grid;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 92px 50px 90px;
     grid-template-columns: 1fr min-content 1fr;
     font-size: 18px;
-    height: 290px;
-    
-
+}
+.header__link_active{
+text-decoration: none;
 }
 .header_con{
     width: 1100px;
@@ -17,7 +17,7 @@ ul{
     flex-direction: row;
     gap: 32px;
     list-style: circle;
-    margin-top: -6px;
+    margin-bottom: 6px;
   
 }
 .header_menu_point{
@@ -32,7 +32,7 @@ ul{
   
 }
 .line_two{
-        height: 1px;
+    height: 1px;
     background-color: black;
     width: 131px;
 }
@@ -53,14 +53,24 @@ ul{
     justify-self: end;
     align-items: flex-end;
     flex-direction: column;
-
-
-}
-.address >*{
-    width: 230px;
     font-style: normal;
     font-size: 18px;
     line-height: 135%;
+    margin-right: 30px;
+
+
+}
+
+.mail_cor{
+    margin-right: 70px;
+
+}
+
+/*.address >*{
+    width: 230px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 135%;*/
 
 }
 
@@ -82,11 +92,12 @@ ul{
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 165px 50px 207px 50px;
-  max-height: 757px;
-  z-index: -5;
-  margin-top: 5px;
+  padding-top: 170px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
   margin-left: 5px;
+  z-index: 0;
 
 
 }
@@ -103,7 +114,7 @@ ul{
   justify-self: center;
   align-self: center;
   margin-top:15px;
-  margin-right: -32px;
+  margin-left: 32px;
   color: #fff;
 
   
@@ -129,19 +140,15 @@ ul{
     font-size: 100px;
     font-weight: 700px;
     letter-spacing: 30px;
-
-  
-
-
+    text-transform: uppercase;
 }
 
 .cover-description{
     display: flex;
-    margin-top: 120px;
     flex-direction: row;
     justify-content: start;
     gap: 104px;
-    max-width: 700px;
+    margin-top: 115px;
 
 
 
@@ -179,7 +186,7 @@ ul{
     margin-top: -40px;
 }
 
-h3{
+.lots_he{
     font-size: 40px;
     font-weight: 700px;
     letter-spacing: 0px;
@@ -189,95 +196,85 @@ h3{
 }
 
 .lots__card-list{
-    margin-bottom: 18px;
-    gap: 18px;
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .lots{
     margin-top: 180px;
-    margin-left:24px ;
-    margin-right:24px ;
-    height: 723px;
+    margin-left:27px;
 }
 
 .card{
-    display: block;
-    min-width: 334px;
-    min-height:  596px;
+    max-width: 334px;
+    min-height:  598px;
     background-size: cover ;
-    margin-left: 6px;
-    margin-top: 2px;
-    margin-right: 4px;
-    margin-bottom: 16px;
+    background-position: center;
+    list-style-type: none;
+    padding-left: 44px;
+    padding-right: 36px;
+    padding-bottom: 30px;
+    padding-top: 48px;
+    margin-bottom: 28px;
+
     
+
 }
+
+.card_type_left{
+background-image: url(../images/card-lot-01.jpg);
+max-height: 596px;
+position: relative;
+z-index: 0;
+}
+
+.card_type_center{
+    background-image: url(../images/card-lot-02.jpg);
+    max-height: 596px;
+    position: relative;
+    z-index: 0;
+}
+
+.card_type_right{
+    background-image: url(../images/card-lot-03.jpg);
+    max-height: 596px;
+    position: relative;
+    z-index: 0;
+}
+
 .card_title{
     display: block;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    margin-top: 48px;
-    margin-left: 40px;
+    text-transform: uppercase;
 
 }
 .card_text{
     font-size: 20px;
     letter-spacing: 0px;
     font-weight: 400;
-    margin-top: 282px;
-    margin-left: 40px;
     color: #fff;
+    text-transform: none;
+
 }
 
-.card_text_centre{
-    font-size: 20px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    margin-left: 35px;
-    color: #fff;
-    margin-top: 35px;
+.card_text_left{
+    margin-top: 276px;
+}
 
+.card_text_center{
+    margin-top: 33px;
 }
 
 .card_text_right{
-    font-size: 20px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    margin-left: 40px;
-    color: #fff;
     margin-top: 130px;
 }
 
-.center_pic{
-    margin-left: 35px;
-}
-
-.card_type_film{
-    background-image: url(../images/card-lot-01.jpg) ;
-    background-position: center;
-    margin-top: 5px;
-    max-width:334px ;
-    max-height: 596px;
-
-    
-}
-
-.card_type_book{
-    background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    margin-top: 7px;
-}
-
-.card_type_picture{
-    background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    margin-top: 7px;
-    margin-left: -2px;
-}
 .lots__look-more-link{
     font-size: 20px;
     margin-left: 46px;
-    margin-top: 16px;
     
 }
 
@@ -285,8 +282,6 @@ h3{
 
     display: inline-grid;
     grid-template-columns: 335px 2fr;
-    width: 1100px;
-    height: 700px;
     margin-top: 150px;
     padding-left: 78px;
     grid-template-columns: 250px auto;
@@ -303,7 +298,7 @@ h3{
     margin-left: 1px;
 }
 
-h2{
+.about_auction{
     font-size: 40px;
     letter-spacing: 0px;
     font-weight: 700px;
@@ -317,34 +312,34 @@ h2{
   font-weight: 400;
   line-height: 24px;
   margin-left: 60px;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 }
 
-.about-column{
-    
-    gap: 24px;
-    
+.about-column{ 
+    gap: 26px;
 }
 
 .footer{
-    margin-top: 45px;
+    margin-top: 158px;
     display: inline-grid;
     grid-template-columns: 1fr min-content 1fr;
     font-size: 18px;
-    height: 180px;
-    padding-left: 55px;
+    padding-left: 50px;
     grid-template-columns: 320px 420px 300px ;
-
 
 }
 
-.footer-address{
+.add_cor{
 color: #000;
-font-family: Raleway;
+font-family: Raleway,sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 24.3px;
+margin-right: 83px;
+letter-spacing: 0px;
+
+
 }
 
 .footer-ul{
@@ -352,8 +347,7 @@ line-height: 24.3px;
     flex-direction: column;
     gap:0;
     align-items: center;
-    margin-left: -55px;
-    margin-top: 1px;
+    margin-right: 55px;
 
 }
 
@@ -368,17 +362,6 @@ text-decoration: none;
 .logo_footer{
   display: flex;
   justify-content: space-evenly;
+  margin-right:15px ;
 
-}
-
-.logo_painterest{
-    margin-left: 15px;
-}
-
-.logo_vk{
-    margin-left: -15x;
-}
-
-.logo_yt{
-    margin-left: -15px;
 }
