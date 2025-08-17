@@ -49,7 +49,7 @@ ul{
 
 .address{
     display: flex;
-    margin-top: -5px;
+    margin-top: -3px;
     justify-self: end;
     align-items: flex-end;
     flex-direction: column;
@@ -72,34 +72,18 @@ ul{
     font-size: 18px;
     line-height: 135%;*/
 
-}
-
-.overlay {
-  position: absolute;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
-  inset: 0; 
-  width: 100%;
-  height: 100%
-}
-
 .cover-content{
-  width: 100%;
-  max-width: 1100px;
-  min-height: 757px;
-  background-image: url("../images/cover.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-top: 170px;
+    background-image: url(../images/cover.jpg);
+ position: relative;
+  padding-top: 167px;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-right: 43px;
+  padding-bottom: 60px;
   margin-left: 5px;
   z-index: 0;
-
-
+  background-size: cover;
+max-height: 757px;
+background-position: center;
 }
 .aligned-text_left{
   display: block;
@@ -113,7 +97,7 @@ ul{
   grid-row: 2;
   justify-self: center;
   align-self: center;
-  margin-top:15px;
+  margin-top:12px;
   margin-left: 32px;
   color: #fff;
 
@@ -149,6 +133,7 @@ ul{
     justify-content: start;
     gap: 104px;
     margin-top: 115px;
+    max-width: 637px;
 
 
 
@@ -162,6 +147,8 @@ ul{
    letter-spacing: 0px;
    font-weight: 400px;
    color: white;
+   margin-top: 2px;
+   max-width: 637px;
 
 
 }
@@ -177,13 +164,16 @@ ul{
     color: #fff; 
     font-size: 22px;
     align-self: center;
+    border-width: 1px;
 }
 
 .button{
     display: flex;
     flex-direction: row;
     justify-content: end;
-    margin-top: -40px;
+    max-width: 256px;
+    margin-left: 745px;
+    margin-top: -38px;
 }
 
 .lots_he{
@@ -213,13 +203,10 @@ ul{
     background-position: center;
     list-style-type: none;
     padding-left: 44px;
-    padding-right: 36px;
+    padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 48px;
     margin-bottom: 28px;
-
-    
-
 }
 
 .card_type_left{
@@ -243,6 +230,11 @@ z-index: 0;
     z-index: 0;
 }
 
+/*.card_people{
+    padding-right: 10px;
+    padding-left: 40px;
+}*/
+
 .card_title{
     display: block;
     font-size: 22px;
@@ -257,6 +249,7 @@ z-index: 0;
     font-weight: 400;
     color: #fff;
     text-transform: none;
+    line-height: 120%;
 
 }
 
@@ -326,6 +319,7 @@ z-index: 0;
     font-size: 18px;
     padding-left: 50px;
     grid-template-columns: 320px 420px 300px ;
+margin-bottom: auto;
 
 }
 
@@ -336,9 +330,9 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 24.3px;
-margin-right: 83px;
+margin-right: 78px;
 letter-spacing: 0px;
-
+margin-top: 3px;
 
 }
 
@@ -348,6 +342,7 @@ letter-spacing: 0px;
     gap:0;
     align-items: center;
     margin-right: 55px;
+    margin-left: 5px;
 
 }
 
@@ -362,6 +357,15 @@ text-decoration: none;
 .logo_footer{
   display: flex;
   justify-content: space-evenly;
-  margin-right:15px ;
+  margin-right:12px ;
 
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
+  inset: 0; 
+  width: 100%;
+  height: 100%;
 }
